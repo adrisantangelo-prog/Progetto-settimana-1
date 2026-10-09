@@ -4,9 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@400;600&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="Style.css">
     <title>Document</title>
 </head>
 
@@ -15,57 +17,129 @@
         <select id="inizio"></select>
         <h1>Mario Rossi</h1>
         <nav>
-            <p class="sotto"><b>Studente Full Stack</b> - corso Epicode 2026</p>
+            <p class="sotto"><em>Studente Full Stack <span>&LT;/&GT;</span> in formazione su Epicode2026 </em> </p>
             <ul class="nav">
-                <li> <a href="#chi-sono">Chi sono</a></li>
-                <li> <a href="#competenze">Competenze</a></li>
-                <li> <a href="#esperienze">Esperienze</a></li>
-                <li> <a href="#progetti">Progetti</a></li>
-                <li> <a href="#contatti">Contatti</a></li>
+                <li> <i class="fa-solid fa-user"></i> <a href="#chi-sono">Chi sono</a></li>
+                <li> <i class="fa-solid fa-gauge-high"></i> <a href="#competenze">Competenze</a></li>
+                <li> <i class="fa-solid fa-briefcase"></i> <a href="#esperienze">Esperienze</a></li>
+                <li> <i class="fa-solid fa-folder-open"></i> <a href="#progetti">Progetti</a></li>
+                <li> <i class="fa-solid fa-envelope"></i> <a href="#contatti">Contatti</a></li>
             </ul>
         </nav>
     </header>
-        <main>
-            <div>
-                <section id="chi-sono">
-                    <h2>Chi sono</h2>
-                    <figure>
-                        <img src="https://placehold.co/200x200" alt="Foto di Mario Rossi">
-                        <figcaption> didascalia </figcaption>
-                    </figure>
-                    <p>Mi chiamo Mario Rossi e sto imparando a programmare. Studio sviluppo web con
-                        <strong>Epicode</strong> e ogni giorno aggiungo qualcosa di nuovo a questa pagina.
-                        Mi piace lavorare in gruppo,leggere </br> documentazione tecnica e capire come funzinano le
-                        cose.
-                    </p>
-                    <aside>
-                        <p>Lavoro come programmatore da poco.</p>
-                    </aside>
+    <main id="contenuto">
+
+        <section id="chi-sono" class="card-section">
+            <h2>Chi sono</h2>
+            <div class="Io">     
+                <figcaption>e mentoring</figcaption>
+                <img src="https://placehold.co/200x200" alt="Foto di Mario Rossi" class="icona">
+                 <p>Mi chiamo Mario Rossi e sto imparando a programmare. Studio sviluppo web con
+                    <strong>Epicode</strong> e ogni giorno aggiungo qualcosa di nuovo a questa pagina.
+                    Mi piace lavorare in gruppo,leggere documentazione tecnica e capire come funzinano le
+                    cose. Vivo a Milano. Ho una formazione precendere in <em>lettere</em> e ora sto cambiando settore.
+                    Cerco
+                    un primo ruolo come sviluppatore frontend.
+                </p>
+                <a href="#inizio">Torna all'inizio</a>          
+        </section>
             </div>
-            <div>
-                <p> Vivo a Milano. Ho una formazione precendere in <em>lettere</em> e ora sto cambiando settore. Cerco
-                    un primo ruolo come sviluppatore frontend.</p>
+       
+        <!-- competenze -->
+        <div>
+            <section id="competenze" class="card-section">
+                <h2>Competenze</h2>
+                <p class="section-desc">Le tecnologie su cui mi sento più sicuro al termine della prima settimana di
+                    corso. Le percentuali sono autovalutazioni, non certificazioni.</p>
+
+                <p class="stack-title">Stack tecnico — autovalutazione</p>
+
+                <!-- Tabella/Griglia delle competenze -->
+                <div class="skills-container">
+                    <!-- Intestazione -->
+                    <div class="skills-header">
+                        <div>Tecnologia</div>
+                        <div>Livello</div>
+                    </div>
+
+                    <!-- Riga 1: HTML5 -->
+                    <div class="skill-row">
+                        <div class="skill-info">
+                            <div class="skill-name icon-html">HTML5 semantico</div>
+                            <div class="skill-details">Tag strutturali, attributi, accessibilità di base, form con
+                                validazione</div>
+                        </div>
+                        <div class="skill-level">
+                            <div class="progress-bar">
+                                <div class="progress"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Riga 2: CSS3 -->
+                    <div class="skill-row">
+                        <div class="skill-info">
+                            <div class="skill-name icon-css">CSS3</div>
+                            <div class="skill-details">Selettori, pseudo-classi, box model, float, pseudo elementi,
+                                Google Fonts</div>
+                        </div>
+                        <div class="skill-level">
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 80%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Riga 3: Git e GitHub -->
+                    <div class="skill-row">
+                        <div class="skill-info">
+                            <div class="skill-name icon-git">Git e GitHub</div>
+                            <div class="skill-details">init, add, commit, push, repository remoti, pubblicazione su
+                                GitHub Pages</div>
+                        </div>
+                        <div class="skill-level">
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 70%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Riga 4: Linee di comando -->
+                    <div class="skill-row">
+                        <div class="skill-info">
+                            <div class="skill-name icon-terminal">Linee di comando</div>
+                            <div class="skill-details">Navigazione tra cartelle, gestione file, comandi base di shell su
+                                macOS e Linux</div>
+                        </div>
+                        <div class="skill-level">
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 60%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Riga 5: Markdown -->
+                    <div class="skill-row">
+                        <div class="skill-info">
+                            <div class="skill-name icon-markdown">Markdown e documentazione</div>
+                            <div class="skill-details">README, documentazione tecnica, scrittura chiara per altri
+                                sviluppatori</div>
+                        </div>
+                        <div class="skill-level">
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 75%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <a href="#inizio">Torna all'inizio</a>
-                </section>
-            </div>
-            <div>
-                <section id="competenze">
-                    <h2>Competenze</h2>
-                    <p>Le tecnologie che vedo durante le prime settimane di corso.</p>
-                    <ul class="skill">
-                        <li>HTML - struttura delle pagine</li>
-                        <li>CSS - stile e impaginazione</li>
-                        <li>Git e GitHub - versionamento del codice</li>
-                        <li>Visual Studio Code - editor di lavoro</li>
-                    </ul>
-                    <a href="#inizio">Torna all'inizio</a>
-            </div>
             </section>
+
             <div>
-                <section id="esperienze">
+                <section id="esperienze" class="card-section">
                     <h2>Esperienze</h2>
                     <p>Un riepilogo del mio percorso formativo e lavorativo recente.</p>
-                    <table>
+                    <table class="cv-table">
                         <caption>Esperienze formative e lavorative</caption>
                         <thead>
                             <tr>
@@ -76,19 +150,19 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td>2026</td>
-                                <td>Studente Full Stack</td>
-                                <td>Epicode</td>
+                                <td class="anno">2026</td>
+                                <td class="ruolo">Studente Full Stack</td>
+                                <td class="lavoro">Epicode</td>
                             </tr>
                             <tr>
-                                <td>2024 - 2025</td>
-                                <td>Libraio</td>
-                                <td>Libreria Centrale,Milano</td>
+                                <td class="anno">2024 - 2025</td>
+                                <td class="ruolo">Libraio</td>
+                                <td class="lavoro">Libreria Centrale,Milano</td>
                             </tr>
                             <tr>
-                                <td>2018 - 2022</td>
-                                <td>Studente di Lettere</td>
-                                <td>Università degli Studi di Milano</td>
+                                <td class="anno">2018 - 2022</td>
+                                <td class="ruolo">Studente di Lettere</td>
+                                <td class="lavoro">Università degli Studi di Milano</td>
                             </tr>
                         </tbody>
                     </table>
@@ -96,96 +170,115 @@
             </div>
             </section>
             <div>
-                <section id="progetti">
-                    <h2>Progetti</h2>
-                    <p> I lavori fatti durante le prime settimane di corso.</p>
-                    <a href="#inizio">Torna all'inizio</a>
+                <section id="progetti" class="card-section">
+                    <h2 class="section-title">Progetti</h2>
+                    <p class="section-subtitle">I lavori fatti durante le prime settimane di corso. Ogni card ha un link
+                        al repository.</p>
+                    <div class="projects-container">
+
+                        <!-- Card 1 -->
+                        <div class="project-card border-red">
+                            <div class="card-header">
+                                <h3 class="card-title">Pagina ricetta</h3>
+                                <span class="badge badge-new">NEW</span>
+                            </div>
+                            <p class="card-text">Una pagina con titolo, ingredienti e procedura. Esercizio di markup
+                                semantico applicato a un contenuto reale.</p>
+                           <a href="#inizio">Torna all'inizio</a>
+                        </div>
+
+                        <!-- Card 2 -->
+                        <div class="project-card border-yellow">
+                            <div class="card-header">
+                                <h3 class="card-title">Card di presentazione</h3>
+                            </div>
+                            <p class="card-text">Un biglietto digitale con nome, ruolo e link ai social. Pratica su tag
+                                semantici, link e immagini.</p>
+                            <a href="presentazione.html" target="_blank">vedi su GitHub</a>
+                        </div>
+
+                        <!-- Card 3 -->
+                        <div class="project-card border-blue">
+                            <div class="card-header">
+                                <h3 class="card-title">Portfolio personale</h3>
+                            </div>
+                            <p class="card-text">Questa pagina. Costruita da zero in cinque giorni, dal markup HTML alla
+                                stilizzazione CSS, fino alla pubblicazione su GitHub Pages.</p>
+                                <a href="presentazione.html" target="_blank">vedi su GitHub</a>
+                        </div>
+                    </div>
+                    <div class="more-projects">
+                         <a href="#">Tutti i progetti in dettaglio &rarr;</a>
+                    </div>
+                </section>
             </div>
-            <div>
-                <h3 id="pagina-ricetta">Pagina ricetta</h3>
-                <p>Una pagina con titolo, ingredienti e procedura. Esercizio di markup semantico applicato a un
-                    contenuto reale.</p>
-                <a href="pagina-ricetta.html" target="_blank">vedi su GitHub</a>
-            </div>
-            <div>
-                <h3>Card di Presentazione</h3>
-                <p>Un biglietto digitale con nome, ruolo e link ai social. Esercizio di sintesi sulla struttura HTML.
-                </p>
-                <a href="presentazione.html" target="_blank">vedi su GitHub</a>
-            </div>
-            </section>
-            <div>
-                <section id="contatti">
+           </main>
+              <aside>       
+            <div> 
+                <section id="contatti" class="card-section">
                     <h2>Contattami</h2>
                     <p>Compila il form per scrivermi. Ti rispondo entro 24 ore.</p>
-        </main>
-        <aside>
-            <form action="#" method="POST">
-                </div>
-                <div>
-                    <label for="name">Nome:</label>
-                    </br>
-                    <input type="text" id="name" name="name" placeholder="il tuo nome" required>
-                    <br><br>
-                </div>
-                <div>
-                    <label for="email" id="email">Email:</label>
-                    <br>
-                    <input type="email" id="email" name="email" placeholder="tu@esempio.it" required>
-                    <br><br>
-                </div>
-                <div>
-                    <label for="message">Motivo del contatto</label>
-                    <br>
-                    <select name="Motivo del contatto" id="Motivodelcontatto">
-                        <option value="Proposta-di-lavoro">Proposta di lavoro</option>
-                        <option value="Collaborazione">Collaborazione</option>
-                        <option value="Softair">Softair</option>
-                        <option value="Altro">Altro</option>
-                    </select>
-                    <br><br>
-                </div>
-                <div>
-                    <label for="dataPreferita" id="dataPreferita">Data preferita</label>
-                    <br>
-                    <input type="date" id="date" name="Data preferita">
-                    <br><br>
-                </div>
-                <label for="message">Messaggio</label>
-                <br>
-                <textarea id="message" name="message" rows="5" placeholder="scrivi il tuo messaggio..."
-                    required></textarea>
-                <br><br>
-                <div>
-                    <input type="checkbox" id="privacy" name="privacy" required>
-                    <label for="privacy" id="privacy">Accetto di essere ricontattato all'indirizzo indicato</label>
-                    <br><br>
-                </div>
-                <!-- forma input corretta  -->
-                <div>
-                    <button type="submit">Invia</button>
 
-                    <br><br>
-                </div>
+                    <form action="#" method="POST">
+            </div>
+            <div>
+                <label for="name">Nome:</label>
+                </br>
+                <input type="text" id="name" name="name" placeholder="il tuo nome" required>
+                <br><br>
+            </div>
+            <div>
+                <label for="email" id="email">Email:</label>
+                <br>
+                <input type="email" id="email" name="email" placeholder="tu@esempio.it" required>
+                <br><br>
+            </div>
+            <div>
+                <label for="message">Motivo del contatto</label>
+                <br>
+                <select name="Motivo del contatto" id="Motivodelcontatto">
+                    <option value="Proposta-di-lavoro">Proposta di lavoro</option>
+                    <option value="Collaborazione">Collaborazione</option>
+                    <option value="Softair">Softair</option>
+                    <option value="Altro">Altro</option>
+                </select>
+                <br><br>
+            </div>
+            <div>
+                <label for="dataPreferita" id="dataPreferita">Data preferita</label>
+                <br>
+                <input type="date" id="date" name="Data preferita">
+                <br><br>
+            </div>
+            <label for="message">Messaggio</label>
+            <br>
+            <textarea id="message" name="message" rows="5" placeholder="scrivi il tuo messaggio..." required></textarea>
+            <br><br>
+            <div>
+                <input type="checkbox" id="privacy" name="privacy" required>
+                <label for="privacy" id="privacy">Accetto di essere ricontattato all'indirizzo indicato</label>
+                <br><br>
+            </div>
+            <!-- forma input corretta  -->
+            <div>
+                <button type="submit">Invia</button>
+
+                <br><br>
+            </div>
             </form>
             <div>
                 <a href="#inizio">Torna all'inizio</a>
             </div>
             </section>
-        </aside>
-        <footer id="footer">
-            <p>Profilo GitHub: <a href="https://github.com/mario-rossi" target="_blank">github.com/mariorossi</a></p>
-            <p>Profilo LinkedIn: <a href="https://www.linkedin.com/in/mario-rossi"
-                    target="_blank">linkedin.com/in/mariorossi</a></p>
-            <p> © 2026 Mario Rossi</p>
-            <div>
-                <iframe width="200" height="250" src="https://www.youtube.com/embed/_pl8un7GW5I?si=AmfZXFRbiOPV-MkR"
-                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;
-              picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>
-        </footer>
-        </div>
-    
+      </aside> 
+    <footer id="footer">
+        <p>Profilo GitHub: <a href="https://github.com/mario-rossi" target="_blank">github.com/mariorossi</a></p>
+        <p>Profilo LinkedIn: <a href="https://www.linkedin.com/in/mario-rossi"
+                target="_blank">linkedin.com/in/mariorossi</a></p>
+        <p> © 2026 Mario Rossi</p>
+    </footer>
+    </div>
+
 </body>
 
 </html>
