@@ -1,5 +1,197 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+*::before,::after{ box-sizing: border-box;}
+ 
+
+html, body {
+    font-family:'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    background-color: #ffffff;
+    margin: 0 auto;
+    max-width: 920px;
+    padding: 40px 20px;
+}
+
+header{
+    background-image: url("https://picsum.photos/seed/picsum/1240/768");
+    background-size: cover;
+    background-position-x: center;
+    color: #ffffff;
+    text-align: center;
+    background-color: hsl(210, 66%, 74%);
+}
+
+main{
+    max-width: 920px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.main .section {
+    padding: 32px;
+    margin-bottom: 24;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(red, green, blue, 0.008 alpha);
+}   
+
+main section h2::before { content: "_"; color: gold; }
+
+#site-header{
+    padding: 60px 20px 40px;
+    border-bottom: 4px solid yellow;
+    text-shadow: 0 2px 4px rgba(red, green, blue, 0,2 alpha);
+}
+
+#site-headr nav{
+    display: inline-block;
+    padding: 8px 16px;
+    margin: 0 4px;
+    border-radius: 4px;
+}
+
+input::placeholder,textarea::placeholder{
+    color: #999999;
+    font-style:italic;
+}
+
+#site-header h1 {
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-style: italic;
+    padding: 60px 20px 40px;
+    border-bottom: 4px;
+    text-shadow: 0 2px 4px rgba(red, green, blue, 0.2 alpha);
+}
+
+.sotto {
+    display: flex;
+    justify-content: center;
+    color:  #F44A4A;
+    font-style: italic;
+}
+
+
+nav{
+    color: hsl(67, 98%, 26%);
+    text-align: center;
+    font-weight: bold;
+}
+
+
+nav ul{
+    width: 50%;
+    display: inline-block;
+}
+
+nav ul li{
+    list-style-type: none;
+    display: inline;
+}
+
+nav ul li:not(:last-child){
+    margin-right: 15px;
+}
+
+
+a :hover nav{
+    background-color: hsl(67, 98%, 26%);
+}
+
+a :hover{
+    background-color: rgba(rgb(145, 11, 11), green, blue, alpha);
+}
+
+h2,h3 {
+    font-size: bold;
+    color: #1F3D7A;
+    text-align: start;
+
+}
+
+.avatar{
+    width: 110px;
+    height: 110px;
+    border: 4px solid yellow;
+    border-radius: 50%;
+    float: left;
+    margin: 0 24px 12px 0;
+}
+
+#competenze{
+    clear: both;
+}
+
+
+#chi-sono {
+    color: #ffffff;
+    text-align: justify;
+}
+
+#chi-sono p:first-of-type{
+    font-size: large;
+    font-style: italic;
+    color: #1F3D7A;
+}
+
+#chi-sono p:first-of-type::first-letter{
+    font-size: 3rem;
+    font-weight: bold;
+    float: left;
+    margin-right: 6px;
+    color: #F44A4A;
+}
+
+.skill li:nth-child(odd){
+    background-color: #d3ecf1;
+}
+
+.skill li:first-child{
+    font-weight: bold;
+}
+
+label{
+    font-weight: bold;
+    color: #1F3D7A;
+}
+
+input{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 60%;
+    width: 60%;
+}
+
+input:focus {
+    outline: 1px solid #232323;
+    background-color: #232323;
+    color: #ffffff;
+}
+
+input[type="checkbox"] {
+    width: 1rem;
+    height: 1rem;
+}
+
+button{
+    color: #ffffff;
+    background-color: #1F3D7A;
+    font-weight: bold;
+    width: 30%;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(red, green, blue, 0.1 alpha);
+}
+
+a :hover button{
+    color: hsl(224, 78%, 48%);
+    box-shadow: 0 4px 8px rgba(red, green, blue, 0.15 alpha);
+}
+
+footer{
+    background-color: #75b80b;
+    color: #ffffff;
+    text-align: center;
+    font-size: 0.9rem;
 }
