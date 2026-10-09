@@ -389,9 +389,10 @@ style .progress{
 }
 
 /* Link di GitHub gestito come blocco in linea */
+/* solo quando viene clickccato*/
 .github-link {
   display: inline-block;
-  color: #333;
+  color: #03009c;
   text-decoration: none;
   font-size: 0.85rem;
   font-weight: 500;
@@ -400,10 +401,12 @@ style .progress{
 .github-link i {
   margin-right: 4px;
 }
-
-.github-link:hover {
+/* quando ci passi il mouse sopra*/
+.github-link a:hover {
   text-decoration: underline;
+  text-decoration-color: yellow;
 }
+
 
 /* Allineamento a destra tramite blocco di testo */
 .more-projects {
@@ -412,7 +415,7 @@ style .progress{
 }
 
 .more-projects a {
-  color: #333;
+  color: #0012b1;
   text-decoration: none;
   font-size: 0.9rem;
   font-weight: 500;
@@ -420,6 +423,7 @@ style .progress{
 
 .more-projects a:hover {
   text-decoration: underline;
+  text-decoration-color: yellow;
 }
 
 
