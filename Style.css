@@ -1,11 +1,13 @@
-*::before,::after{ 
+*::before,
+::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
- 
 
-html, body {
+
+html,
+body {
     font-family: 'Inter', Arial, sans-serif;
     font-size: 16px;
     line-height: 1.7;
@@ -18,20 +20,21 @@ html, body {
 
 /* header /* /* nav */
 
-header{
+header {
     background-image: url("https://picsum.photos/seed/picsum/1240/768");
     background-size: cover;
     background-position-x: center;
     color: #ffffff;
     text-align: center;
     background-color: hsl(210, 66%, 74%);
-    padding: 60px 20px 40px 20px;   
+    width: 100%;
+    padding: 12px;
     border-bottom: 4px solid yellow;
     text-shadow: #f0e7c8;
 }
 
 
-#site-header nav{
+#site-header nav {
     display: inline-block;
     padding: 8px 16px;
     margin: 0 4px;
@@ -75,22 +78,22 @@ header{
     background-color: rgba(255, 255, 255, 0.2);
 }
 
-nav ul{
+nav ul {
     width: 50%;
     display: inline-block;
 }
 
-nav ul li{
+nav ul li {
     list-style-type: none;
     display: inline;
 }
 
-nav ul li:not(:last-child){
+nav ul li:not(:last-child) {
     margin-right: 15px;
 }
 
 /*main*/
-aside{ 
+aside {
     max-width: 920px;
     margin: 0 auto;
     background: white;
@@ -99,7 +102,8 @@ aside{
     margin-bottom: 25px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
 }
-main{
+
+main {
     max-width: 920px;
     margin: 0 auto;
     padding: 40px 20px;
@@ -107,20 +111,24 @@ main{
 
 .main .section {
     padding: 32px;
-    margin-bottom: 24;
+    margin-top: 40;
     border: 1px solid #880f0f;
     border-radius: 8px;
     box-shadow: 0 2px 6px rgba(red, green, blue, 0.008 alpha);
-}   
+}
 
-main section h2::before { content:"_"; color: gold; }
+main section h2::before {
+    content: "_";
+    color: gold;
+}
 
 
 /*contenuto*/
 
 .contenuto {
     max-width: 800px;
-    margin: -30px auto 40px auto; /* Sovrappone il contenuto */
+    margin: -30px auto 40px auto;
+    /* Sovrappone il contenuto */
     padding: 0 20px;
 }
 
@@ -158,12 +166,13 @@ main section h2::before { content:"_"; color: gold; }
     text-align: justify;
 }
 
-.chi-sono :last-child p:first-of-type{
+.chi-sono :last-child p:first-of-type {
     font-size: large;
     color: #1F3D7A;
 }
 
-h1,h2,h3::first-letter{
+h2,
+h3::first-letter {
     font-family: 'Playfair Display', Georgia, serif;
     color: #1F3D7A;
     text-align: start;
@@ -239,7 +248,8 @@ h1,h2,h3::first-letter{
 
 /* STRUTTURA DELLE BARRE DI LIVELLO (LATO DESTRO) */
 .skill-level {
-    width: 320px; /* Dimensione fissa per tenere le barre allineate a destra */
+    width: 320px;
+    /* Dimensione fissa per tenere le barre allineate a destra */
     padding-top: 4px;
 }
 
@@ -252,7 +262,7 @@ h1,h2,h3::first-letter{
 }
 
 .progress {
-    background-color: #f7cc0a; 
+    background-color: #f7cc0a;
     height: 100%;
     border-radius: 3px;
 }
@@ -265,54 +275,54 @@ style .progress{
 
 /* Stile generale della tabella */
 .cv-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin: 20px 0;
-  font-size: 0.95rem;
-  box-shadow: 0 4px 6px rgba(230, 224, 224, 0.05);
-  border-radius: 8px;
-  overflow: hidden;
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 0.95rem;
+    box-shadow: 0 4px 6px rgba(230, 224, 224, 0.05);
+    border-radius: 8px;
+    overflow: hidden;
 }
 
 /* Intestazione della tabella */
 .cv-table thead tr {
-  background-color: #f4f1ec;
-  color: #1d12b1;
-  text-align: left;
-  font-weight: 600;
+    background-color: #f4f1ec;
+    color: #1d12b1;
+    text-align: left;
+    font-weight: 600;
 }
 
-.cv-table th, 
+.cv-table th,
 .cv-table td {
-  padding: 14px 18px;
+    padding: 14px 18px;
 }
 
 /* Righe del corpo della tabella */
 .cv-table tbody tr {
-  border-bottom: 1px solid #e0e0e0;
-  transition: background-color 0.2s ease;
+    border-bottom: 1px solid #e0e0e0;
+    transition: background-color 0.2s ease;
 }
 
 /* Effetto al passaggio del mouse */
 .cv-table tbody tr:hover {
-  background-color: #f8f9fa;
+    background-color: #f8f9fa;
 }
 
 /* Stili specifici per le colonne */
 .cv-table td.anno {
-  font-weight: bold;
-  color: #4e7caa;
-  width: 20%;
+    font-weight: bold;
+    color: #4e7caa;
+    width: 20%;
 }
 
 .cv-table td.ruolo {
-  color: #333333;
-  width: 40%;
+    color: #333333;
+    width: 40%;
 }
 
 .cv-table td.lavoro {
-  color: #666666;
-  width: 40%;
+    color: #666666;
+    width: 40%;
 }
 
 .cv-table caption {
@@ -323,132 +333,142 @@ style .progress{
 /* Stili generali della sezione */
 
 .section-title {
-  font-size: 2rem;
-  color: #1a1a1a;
-  margin-bottom: 5px;
+    font-size: 2rem;
+    color: #1a1a1a;
+    margin-bottom: 5px;
 }
 
 .section-subtitle {
-  color: #666;
-  font-size: 0.95rem;
-  margin-bottom: 30px;
+    color: #666;
+    font-size: 0.95rem;
+    margin-bottom: 30px;
 }
 
 /* Contenitore verticale */
 .projects-container {
-  display: grid;
-  grid-template-columns: 1fr;
-  row-gap: 20px;
-  margin-bottom: 20px;
-  border-radius: 50px 25px;
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+    margin-bottom: 20px;
+    border-radius: 50px 25px;
 }
 
 /* Stile base delle Card */
 .project-card {
-  background-color: #fcfcfc;
-  padding: 20px;
-  border-radius: 4px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+    background-color: #fcfcfc;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
 }
 
 /* Bordi laterali colorati */
-.project-card.border-red { border-left: 4px solid #0275d8; }
-.project-card.border-yellow { border-left: 4px solid #f0ad4e; }
-.project-card.border-blue { border-left: 4px solid #0275d8; }
+.project-card.border-red {
+    border-left: 4px solid #0275d8;
+}
+
+.project-card.border-yellow {
+    border-left: 4px solid #f0ad4e;
+}
+
+.project-card.border-blue {
+    border-left: 4px solid #0275d8;
+}
 
 .card-header {
-  margin-bottom: 12px;
+    margin-bottom: 12px;
 }
 
 .card-title {
-  display: inline-block;
-  margin: 0;
-  font-size: 1.2rem;
-  color: #222;
-  vertical-align: middle;
+    display: inline-block;
+    margin: 0;
+    font-size: 1.2rem;
+    color: #222;
+    vertical-align: middle;
 }
 
 /* Badge "NEW" */
 .badge-new {
-  display: inline-block;
-  background-color: #d9534f;
-  color: white;
-  font-size: 0.7rem;
-  padding: 2px 6px;
-  border-radius: 3px;
-  font-weight: bold;
-  margin-left: 8px;
-  vertical-align: middle;
+    display: inline-block;
+    background-color: #d9534f;
+    color: white;
+    font-size: 0.7rem;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-weight: bold;
+    margin-left: 8px;
+    vertical-align: middle;
 }
 
 .card-text {
-  color: #555;
-  font-size: 0.9rem;
-  line-height: 1.5;
-  margin: 0 0 15px 0;
+    color: #555;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin: 0 0 15px 0;
 }
 
 /* Link di GitHub gestito come blocco in linea */
 /* solo quando viene clickccato*/
 .github-link {
-  display: inline-block;
-  color: #03009c;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 0.85rem;
-  font-weight: 500;
+    display: inline-block;
+    color: #03009c;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.85rem;
+    font-weight: 500;
 }
 
 .github-link i {
-  margin-right: 4px;
+    margin-right: 4px;
 }
+
 /* quando ci passi il mouse sopra*/
 .github-link a:hover {
-  text-decoration: underline;
-  text-decoration-color: yellow;
+    text-decoration: underline;
+    text-decoration-color: yellow;
 }
 
 
 /* Allineamento a destra tramite blocco di testo */
 .more-projects {
-  text-align: right;
-  margin-top: 15px;
+    text-align: right;
+    margin-top: 15px;
 }
 
 .more-projects a {
-  color: #0012b1;
-  text-decoration: none;
-  font-size: 0.9rem;
-  font-weight: 500;
+    color: #0012b1;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
 }
 
 .more-projects a:hover {
-  text-decoration: underline;
-  text-decoration-color: yellow;
+    text-decoration: underline;
+    text-decoration-color: yellow;
 }
 
 
 
 
 
-input::placeholder,textarea::placeholder{
+input::placeholder,
+textarea::placeholder {
     color: #999999;
-    font-style:italic;
+    font-style: italic;
 }
 
 .sotto {
     display: flex;
     justify-content: center;
-    color:  #ffffff;
+    color: #ffffff;
     font-style: italic;
 }
 
 
-a :hover{
+a :hover {
     background-color: rgba(rgb(145, 11, 11), green, blue, alpha);
 }
 
-.avatar{
+.avatar {
     width: 110px;
     height: 110px;
     border: 4px solid yellow;
@@ -457,24 +477,24 @@ a :hover{
     margin: 0 24px 12px 0;
 }
 
-#competenze{
+#competenze {
     clear: both;
 }
 
-.skill li:nth-child(odd){
+.skill li:nth-child(odd) {
     background-color: #d3ecf1;
 }
 
-.skill li:first-child{
+.skill li:first-child {
     font-weight: bold;
 }
 
-label{
+label {
     font-weight: bold;
     color: #1F3D7A;
 }
 
-input{
+input {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 60%;
     width: 60%;
@@ -491,7 +511,7 @@ input[type="checkbox"] {
     height: 1rem;
 }
 
-button{
+button {
     color: #ffffff;
     background-color: #1F3D7A;
     font-weight: bold;
@@ -502,16 +522,49 @@ button{
     box-shadow: 0 2px 4px rgba(red, green, blue, 0.1 alpha);
 }
 
-a :hover button{
+a :hover button {
     color: hsl(224, 78%, 48%);
     box-shadow: 0 4px 8px rgba(red, green, blue, 0.15 alpha);
 }
 
-footer{
-    background-color: #1c0bb8;
+footer {
+    background-color: #1b0ab8;
     color: #ffffff;
     text-align: center;
     font-size: 0.9rem;
     background: linear-gradient(135deg, #1e3c72, #2a5298);
     width: 100%;
+}
+
+/* Stile del contenitore */
+.icon-container {
+    display: flex;
+    gap: 15px;
+    background-color: #1a237e;
+    /* Sfondo blu scuro */
+    padding: 20px;
+}
+
+/* Stile base dei pulsanti tondi */
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #1a237e;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.social-icon:hover {
+    background-color: #ffeb3b;
+    color: #000000;
+}
+
+/* Effetto Active: quando clicchi il pulsante */
+.social-icon:active {
+    background-color: #fdd835;
 }
